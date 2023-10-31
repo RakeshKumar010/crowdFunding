@@ -4,7 +4,7 @@ const TrdFund = () => {
   return (
     <div >
       <div className="m-10 ">
-      <h1 className="text-4xl font-extrabold text-center leading-normal"><span className="text-teal-400">Trending </span> Fundraisers</h1>
+      <h1 className="lg:text-4xl text-2xl my-3 lg:my-0 font-extrabold text-center leading-normal"><span className="text-teal-400">Trending </span> Fundraisers</h1>
       <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eligendi vero amet minima harum pariatur!</p>
       </div>
     <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">

@@ -3,9 +3,9 @@ import React from "react";
 const Story = () => {
   return (
     <div>
-      <div className="text-4xl font-extrabold text-center leading-normal m-10">
+      <div className="lg:text-4xl text-2xl my-3 lg:my-0 font-extrabold text-center leading-normal m-10">
         <h1>
-          <span className="text-teal-400">Success </span>Stories
+          <span className="text-teal-400 ">Success </span>Stories
         </h1>
       </div>
       <div className="flex justify-around gap-7 flex-wrap my-5">

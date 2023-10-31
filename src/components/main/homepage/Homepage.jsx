@@ -6,7 +6,7 @@ import Playstore from './Playstore'
 
 const Homepage = () => {
   return (
-    <div className='px-36'>
+    <div className='lg:px-36'>
     <Header/>
     <TrdFund/>
     <Story/>

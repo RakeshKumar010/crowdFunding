@@ -3,13 +3,13 @@ import React from "react";
 const BrosFund = () => {
   return (
     <div>
-        <div className="bg-gray-400  w-full text-center ">
+        <div className="bg-gray-400/40  w-full text-center">
            
             <p>Join 378,696 monthly donors with Social Impact Plan and start saving needy children every month.</p>
 
         </div>
     <div className=" w-full flex gap-3 ">
-      <div className="w-60 h-fit bg-gray-200 rounded-md mb-4 flex flex-col gap-6 py-3 pl-3 text-sm [&>p]:hover:cursor-pointer">
+      <div className="w-60 h-fit bg-gray-200 rounded-md mb-4  flex-col gap-6 py-3 pl-3 text-sm [&>p]:hover:cursor-pointer hidden lg:flex">
         <p className="font-bold">CATEGORIES</p>
         <p>All Categories</p>
         <p>Education</p>
@@ -24,7 +24,7 @@ const BrosFund = () => {
         <p>Community Development</p>
         <p>Others</p>
       </div>
-      <div className="flex justify-around flex-wrap gap-6 items-center  w-11/12 my-6">
+      <div className="flex justify-around flex-wrap gap-6 items-center w-full lg:w-11/12 my-6">
         <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <img
@@ -48,7 +48,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -98,7 +98,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -148,7 +148,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -198,7 +198,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -248,7 +248,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -298,7 +298,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -348,7 +348,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -398,7 +398,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -448,7 +448,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -498,7 +498,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -548,7 +548,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -598,7 +598,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a
@@ -648,7 +648,7 @@ const BrosFund = () => {
                 50
               ) + "...."}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-2">
               <p className="text-gray-800 text-xs"> <span className="font-bold"> 124</span> Days Left</p>
 
               <a

@@ -5,13 +5,13 @@ const Howitw = () => {
     <>
       <div className="flex flex-col justify-center items-center gap-8 mt-8">
         <h1 className=" text-5xl font-semibold">How to Works</h1>
-        <p className="">
+        <p className="text-center">
           CompanyName is the best place to fundraise for what you care about,
           whether you are an individual, group, or organization.
         </p>
         <img
           decoding="async"
-          className="w-2/3 m-3 rounded-md  overlay-true"
+          className="lg:w-2/3 w-full m-3 rounded-md  overlay-true"
           src="https://www.gofundme.com/c/wp-content/uploads/2023/07/HowItWorks-Thumb.jpg"
           alt=""
           loading="lazy"
@@ -20,8 +20,8 @@ const Howitw = () => {
           speechify-initial-font-size="16px"
         ></img>
       </div>
-      <div className="my-8 flex flex-col justify-center items-center gap-10">
-        <ol className="space-y-4 text-gray-900 flex justify-around list-none list-inside dark:text-gray-400 w-11/12">
+      <div className="my-8 flex flex-col  justify-center items-center gap-10">
+        <ol className="space-y-4 text-gray-900 flex flex-wrap justify-around list-none list-inside dark:text-gray-400 w-11/12">
           <li>
             <strong>1. Start your fundraiser</strong>
             <ul className="pl-5 mt-2 space-y-1 list-disc list-inside">
