@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import BrosFund from "../main/brosFundraiser/BrosFund";
 import Howitw from "../main/howitw/Howitw";
 import Story from "../main/homepage/Story";
+import SignUpFund from "../startFund/signUpFund";
 const Layout = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Layout = () => {
         <Route path="/brosfundraiser" element={<BrosFund />} />
         <Route path="/howitw" element={<Howitw/>} />
         <Route path="/stories" element={<Story/>} />
+        <Route path="/sigupfund" element={<SignUpFund/>} />
       </Routes>
      
     </>
