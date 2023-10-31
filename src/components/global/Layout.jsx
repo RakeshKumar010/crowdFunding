@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import BrosFund from "../main/brosFundraiser/BrosFund";
 import Howitw from "../main/howitw/Howitw";
 import Story from "../main/homepage/Story";
-import SignUpFund from "../startFund/signUpFund";
+import SignUpFund from "../startFund/SignUpFund";
 const Layout = () => {
   return (
     <>
