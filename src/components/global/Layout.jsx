@@ -7,6 +7,13 @@ import BrosFund from "../main/brosFundraiser/BrosFund";
 import Howitw from "../main/howitw/Howitw";
 import Story from "../main/homepage/Story";
 import SignUpFund from "../startFund/SignUpFund";
+import About from "../main/about/About";
+import PreDetails from "../startFund/PreDetails";
+import NePreDetails from "../startFund/NePreDetails";
+import NeStory from "../startFund/NeStory";
+import Congratulations from "../startFund/Congratulations";
+import LoginUser from "../main/login/LoginUser";
+import UserProfile from "../user/UserProfile";
 const Layout = () => {
   return (
     <>
@@ -18,6 +25,13 @@ const Layout = () => {
         <Route path="/howitw" element={<Howitw/>} />
         <Route path="/stories" element={<Story/>} />
         <Route path="/sigupfund" element={<SignUpFund/>} />
+        <Route path="/predetails" element={<PreDetails/>} />
+        <Route path="/needer" element={<NePreDetails/>} />
+        <Route path="/nestory" element={<NeStory/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/login" element={<LoginUser/>} />
+        <Route path="/congratulations" element={<Congratulations/>} />
+        <Route path="/userProfile" element={<UserProfile/>} />
       </Routes>
      
     </>

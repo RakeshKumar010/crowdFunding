@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header'
 import TrdFund from './TrdFund'
 import Story from './Story'
-import Playstore from './Playstore'
+import AppStore from '../../global/AppStore'
 
 const Homepage = () => {
   return (
@@ -10,7 +10,7 @@ const Homepage = () => {
     <Header/>
     <TrdFund/>
     <Story/>
-    <Playstore/>
+    <AppStore/>
     
     </div>
   )

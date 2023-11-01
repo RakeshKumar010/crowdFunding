@@ -27,8 +27,9 @@ const SignUpFund = () => {
             </div>
 
             <div className='absolute right-0 bottom-0  w-full'>
-            <p className=' text-center mb-2'>Already have a account? <Link to={'./loginFund'} className='text-teal-400'> Login</Link></p>
-            <button className='bg-teal-400 w-full p-3 rounded-b-md text-white'>Next</button>
+            <p className=' text-center mb-2'>Already have a account? <Link to={'/login'} className='text-teal-400'> Login</Link></p>
+       <Link to={'/predetails'}>     <button className='bg-teal-400 w-full p-3 rounded-b-md text-white'>Next</button>
+       </Link>
             </div>
             </form>
             
