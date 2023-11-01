@@ -19,7 +19,7 @@ const PreDetails = () => {
               type="text"
               placeholder="How mush do you want to raise? *"
               required
-              className="border-0  w-11/12 "
+              className="border-0  w-11/12 rounded-md"
             />
             <CiUser />
           </div>

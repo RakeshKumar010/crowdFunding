@@ -1,7 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const NeStory = () => {
+  const navigater =useNavigate()
+  const submitFun=(e)=>{
+    e.preventDefault()
+    let data=localStorage.getItem('pdata')
+    localStorage.setItem('data',data)
+    navigater('/congratulations')
+  }
   return (
      <div className="flex justify-center bg-gray-800/80">
       <div
@@ -11,7 +18,7 @@ const NeStory = () => {
         <h2 className="p-2 border-b-2 text-center text-xl text-teal-400">
           Tell the story why run the Fundraise
         </h2>
-        <form className="p-3.5">
+        <form className="p-3.5" onSubmit={submitFun}>
          
          
           
@@ -24,11 +31,11 @@ const NeStory = () => {
               Madad Karo zero platform fee policy will ensure more funds for
               you.
             </p>
-            <Link to={'/congratulations'}>
+    
             <button className="bg-teal-400 w-full p-3 rounded-b-md text-white">
               Submit
             </button>
-            </Link>
+          
           </div>
         </form>
       </div>

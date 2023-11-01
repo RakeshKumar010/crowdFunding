@@ -162,7 +162,7 @@ const NavBar = () => {
             </span>
           </Link>
           <div className="flex md:order-2 ">
-          <Link to={"./sigupfund"}>
+          <Link to={"./predetails"}>
             <button
               type="button"
               className="text-white  bg-teal-400 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 lg:mr-2 md:mr-0 dark:bg-teal-400 dark:hover:bg-teal-500 dark:focus:ring-teal-700 hidden lg:block"
@@ -178,7 +178,9 @@ const NavBar = () => {
              <BiSolidDownArrow className="text-xs"/>
              </div>
              <ul className={userNav?"shadow-md border-2 rounded-md  absolute [&>li]:p-2  backdrop-blur-sm":"hidden"}>
-              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer rounded-t-md">Profile</li>
+              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer rounded-t-md" onClick={()=>{
+                navigate('/userProfile')
+              }}>Profile</li>
               <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer ">My Fundraiser</li>
               <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer ">My Donations</li>
               <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer rounded-b-md" onClick={logoutFun}>Logout</li>
@@ -261,7 +263,7 @@ const NavBar = () => {
             
               <li>
 
-                <Link to={"./sigupfund"}>
+                <Link to={"./predetails"}>
                   <button
                     type="button"
                     className="text-white bg-teal-400 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-teal-400 dark:hover:bg-teal-500 dark:focus:ring-teal-700 lg:hidden"

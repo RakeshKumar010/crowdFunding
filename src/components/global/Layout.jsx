@@ -6,12 +6,12 @@ import Footer from "./Footer";
 import BrosFund from "../main/brosFundraiser/BrosFund";
 import Howitw from "../main/howitw/Howitw";
 import Story from "../main/homepage/Story";
-import SignUpFund from "../startFund/SignUpFund";
+import SignUpFund from "../main/startFund/SignUpFund";
 import About from "../main/about/About";
-import PreDetails from "../startFund/PreDetails";
-import NePreDetails from "../startFund/NePreDetails";
-import NeStory from "../startFund/NeStory";
-import Congratulations from "../startFund/Congratulations";
+import PreDetails from "../main/startFund/PreDetails";
+import NePreDetails from "../main/startFund/NePreDetails";
+import NeStory from "../main/startFund/NeStory";
+import Congratulations from "../main/startFund/Congratulations";
 import LoginUser from "../main/login/LoginUser";
 import UserProfile from "../user/UserProfile";
 const Layout = () => {

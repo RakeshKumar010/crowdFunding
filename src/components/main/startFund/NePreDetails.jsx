@@ -20,7 +20,7 @@ const NePreDetails = () => {
               type="text"
               placeholder="Needer's full name *"
               required
-              className="border-0  w-11/12 "
+              className="border-0  w-11/12 rounded-md"
             />
             <CiUser />
           </div>
@@ -29,7 +29,7 @@ const NePreDetails = () => {
               type="text"
               placeholder="Needer's age *"
               required
-              className="border-0  w-11/12 "
+              className="border-0  w-11/12 rounded-md"
             />
             <CiCalendarDate />
           </div>
@@ -38,7 +38,7 @@ const NePreDetails = () => {
               type="text"
               placeholder="Address *"
               required
-              className="border-0  w-11/12 "
+              className="border-0  w-11/12 rounded-md"
             />
             <LiaMapMarkerAltSolid />
           </div>
