@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {PiUserCircleDuotone} from 'react-icons/pi'
 import {BiSolidDownArrow} from 'react-icons/bi'
 
@@ -7,6 +7,7 @@ const NavBar = () => {
   const[show,setShow]=useState(true)
   const [logStatus,setLogStatus]=useState(false)
   const [userNav,setUserNav]=useState(false)
+  const navigate = useNavigate()
   useEffect(()=>{
     let data = localStorage.getItem('data')
     console.log(data);
@@ -18,7 +19,12 @@ const NavBar = () => {
     setShow(!show)
   }
   const logoutFun= ()=>{
-    // localStorage.clear()
+    localStorage.clear()
+
+      
+      navigate('/')
+      location.reload()
+
 
   }
   return (
