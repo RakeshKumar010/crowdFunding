@@ -17,6 +17,7 @@ const NavBar = () => {
   })
   const showFun=()=>{
     setShow(!show)
+    setUserNav(false)
   }
   const logoutFun= ()=>{
     localStorage.clear()
@@ -31,10 +32,10 @@ const NavBar = () => {
     <>{!logStatus?
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link to={"/"} className="flex items-center">
+          <Link to={"/"} className="flex items-center select-none ">
             <img
               src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8 mr-3"
+              className="h-8 mr-3 "
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -91,7 +92,7 @@ const NavBar = () => {
             
           >
             <ul className="flex bg-gray-700/30  flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li oncli>
+              <li onClick={showFun}>
                 <Link
                   to={"./"}
                   className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent hover:bg-gray-100 md:text-teal-400 md:p-0 md:dark:text-teal-400"
@@ -100,7 +101,7 @@ const NavBar = () => {
                   Home
                 </Link>
               </li>
-              <li>
+              <li onClick={showFun}>
                 <Link
                   to={"./brosfundraiser"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -108,7 +109,7 @@ const NavBar = () => {
                   Browse Fundraisers
                 </Link>
               </li>
-              <li>
+              <li onClick={showFun}>
                 <Link
                   to={"./howitw"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -116,7 +117,7 @@ const NavBar = () => {
                   How It Works
                 </Link>
               </li>
-              <li>
+              <li onClick={showFun}>
                 <Link
                   to={"./stories"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -125,7 +126,7 @@ const NavBar = () => {
                 </Link>
               </li>
              
-              <li>
+              <li onClick={showFun}>
 
                 <Link to={"./login"}>
                   <button
@@ -151,10 +152,10 @@ const NavBar = () => {
       :
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link to={"/"} className="flex items-center">
+          <Link to={"/"} className="flex items-center select-none">
             <img
               src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8 mr-3"
+              className="h-8 mr-3 "
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -170,19 +171,26 @@ const NavBar = () => {
               Start a Fundraiser
             </button>
             </Link>
-            <div className="hidden  lg:block ">
-              <div className="active:bg-gray-400 flex w-fit items-center hover:cursor-pointer rounded-full" onClick={()=>{
+            <div className="  lg:block ">
+              <div className="active:bg-gray-400 flex w-fit items-center hover:cursor-pointer rounded-full select-none" onClick={()=>{
                 setUserNav(!userNav)
+                setShow(true)
               }}>
              <PiUserCircleDuotone className="text-4xl text-gray-600"/>
              <BiSolidDownArrow className="text-xs"/>
              </div>
-             <ul className={userNav?"shadow-md border-2 rounded-md  absolute [&>li]:p-2  backdrop-blur-sm":"hidden"}>
+             <ul className={userNav?"shadow-md border-2 rounded-md  absolute [&>li]:p-2  backdrop-blur-sm right-0 lg:right-auto":"hidden"}>
               <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer rounded-t-md" onClick={()=>{
                 navigate('/userProfile')
+                setUserNav(!userNav)
+
               }}>Profile</li>
-              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer ">My Fundraiser</li>
-              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer ">My Donations</li>
+              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer whitespace-nowrap "onClick={()=>{
+                setUserNav(!userNav)
+              }}>My Fundraiser</li>
+              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer whitespace-nowrap" onClick={()=>{
+                setUserNav(!userNav)
+              }}>My Donations</li>
               <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer rounded-b-md" onClick={logoutFun}>Logout</li>
              </ul>
             </div>
@@ -227,7 +235,7 @@ const NavBar = () => {
             
           >
             <ul className="flex bg-gray-700/30  flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li oncli>
+              <li onClick={showFun}>
                 <Link
                   to={"./"}
                   className="block py-2 pl-3 pr-4 text-gray-900  rounded md:bg-transparent hover:bg-gray-100 md:text-teal-400 md:p-0 md:dark:text-teal-400"
@@ -236,7 +244,7 @@ const NavBar = () => {
                   Home
                 </Link>
               </li>
-              <li>
+              <li onClick={showFun}>
                 <Link
                   to={"./brosfundraiser"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -244,7 +252,7 @@ const NavBar = () => {
                   Browse Fundraisers
                 </Link>
               </li>
-              <li>
+              <li onClick={showFun}>
                 <Link
                   to={"./howitw"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -252,7 +260,7 @@ const NavBar = () => {
                   How It Works
                 </Link>
               </li>
-              <li>
+              <li onClick={showFun}>
                 <Link
                   to={"./stories"}
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -261,7 +269,7 @@ const NavBar = () => {
                 </Link>
               </li>
             
-              <li>
+              <li onClick={showFun}>
 
                 <Link to={"./predetails"}>
                   <button
