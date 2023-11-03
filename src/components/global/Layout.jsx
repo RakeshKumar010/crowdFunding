@@ -14,6 +14,7 @@ import NeStory from "../main/startFund/NeStory";
 import Congratulations from "../main/startFund/Congratulations";
 import LoginUser from "../main/login/LoginUser";
 import UserProfile from "../user/UserProfile";
+import AccSetting from "../user/AccSetting";
 const Layout = () => {
   return (
     <>
@@ -32,6 +33,7 @@ const Layout = () => {
         <Route path="/login" element={<LoginUser/>} />
         <Route path="/congratulations" element={<Congratulations/>} />
         <Route path="/userProfile" element={<UserProfile/>} />
+        <Route path="/accsetting" element={<AccSetting/>} />
       </Routes>
      
     </>

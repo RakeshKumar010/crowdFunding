@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex justify-center items-center flex-wrap-reverse ">
+    <div className="flex justify-center items-center flex-wrap-reverse mb-6">
   
       <div className="lg:w-1/2 flex flex-col justify-center items-center  lg:items-start lg:gap-6 mt-3 lg:mt-0">
         <p className="lg:text-7xl font-serif lg:leading-snug font-extrabold hidden lg:block">

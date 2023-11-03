@@ -125,6 +125,14 @@ const NavBar = () => {
                   Stories
                 </Link>
               </li>
+              <li onClick={showFun}>
+                <Link
+                  to={"./about"}
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  About
+                </Link>
+              </li>
              
               <li onClick={showFun}>
 
@@ -185,14 +193,20 @@ const NavBar = () => {
                 setUserNav(!userNav)
 
               }}>Profile</li>
-              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer whitespace-nowrap "onClick={()=>{
+                 <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer whitespace-nowrap lg:hidden "onClick={()=>{
                 setUserNav(!userNav)
-              }}>My Fundraiser</li>
-              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer whitespace-nowrap" onClick={()=>{
+                navigate('/accsetting')
+              }}>User Setting</li>
+              <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer rounded-t-md  " onClick={()=>{
+             
                 setUserNav(!userNav)
-              }}>My Donations</li>
+
+              }}>Complate Kyc</li>
+           
+           
               <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer rounded-b-md" onClick={logoutFun}>Logout</li>
              </ul>
+             
             </div>
             {/* <Link to={'/login'}>
             <button
@@ -266,6 +280,14 @@ const NavBar = () => {
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Stories
+                </Link>
+              </li>
+              <li onClick={showFun}>
+                <Link
+                  to={"./about"}
+                  className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-400 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  About
                 </Link>
               </li>
             
