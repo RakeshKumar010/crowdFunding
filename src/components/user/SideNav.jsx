@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { MdDashboard } from "react-icons/md";
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { IoMdSettings } from "react-icons/io";
@@ -25,7 +25,9 @@ const SideNav = () => {
           <MdDashboard />
           DashBoard
         </li>
-        <li className="mb-1 p-2 px-16 hover:text-teal-400 rounded-md whitespace-nowrap hover:cursor-pointer flex items-center gap-3">
+        <li className="mb-1 p-2 px-16 hover:text-teal-400 rounded-md whitespace-nowrap hover:cursor-pointer flex items-center gap-3" onClick={()=>{
+          navigate('/kyc')
+        }}>
           <BsFillShieldLockFill />
           Complate Kyc
         </li>

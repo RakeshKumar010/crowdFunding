@@ -9,6 +9,8 @@ const NavBar = () => {
   const [userNav,setUserNav]=useState(false)
   const navigate = useNavigate()
   useEffect(()=>{
+    let adminData = localStorage.getItem('admin')
+    console.log(adminData);
     let data = localStorage.getItem('data')
     console.log(data);
     if(data){
@@ -208,7 +210,7 @@ const NavBar = () => {
               <li className="hover:bg-teal-400 hover:text-white hover:cursor-pointer rounded-t-md  " onClick={()=>{
              
                 setUserNav(!userNav)
-
+navigate('/kyc')
               }}>Complate Kyc</li>
            
            
