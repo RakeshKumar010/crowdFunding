@@ -55,7 +55,7 @@ const AccSetting = () => {
                 Save
               </button>
           </div>
-          <div className="bg-white lg:w-1/2 w-full rounded-lg  shadow-gray-600 flex items-center flex-col  gap-7 p-4 "></div>
+          <div className="bg-white lg:w-1/2 w-full rounded-lg  shadow-gray-600 flex items-center flex-col  gap-7 p-4"></div>
         </div>
       </div>
     </>

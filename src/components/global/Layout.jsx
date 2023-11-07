@@ -15,6 +15,7 @@ import Congratulations from "../main/startFund/Congratulations";
 import LoginUser from "../main/login/LoginUser";
 import UserProfile from "../user/UserProfile";
 import AccSetting from "../user/AccSetting";
+import Contact from "../main/contact/Contact";
 const Layout = () => {
   return (
     <>
@@ -34,6 +35,7 @@ const Layout = () => {
         <Route path="/congratulations" element={<Congratulations/>} />
         <Route path="/userProfile" element={<UserProfile/>} />
         <Route path="/accsetting" element={<AccSetting/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
      
     </>
