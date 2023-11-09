@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { CiUser } from 'react-icons/ci'
 
 const NeStory = () => {
   const navigater =useNavigate()
@@ -19,7 +20,24 @@ const NeStory = () => {
           Tell the story why run the Fundraise
         </h2>
         <form className="p-3.5" onSubmit={submitFun}>
-         
+        <div className="flex justify-between  border-b-2 w-full mb-3 items-center pr-2 ">
+            <input
+              type="text"
+              placeholder="Campaign titles*"
+              required
+              className="border-0  w-11/12 rounded-md"
+            />
+            <CiUser />
+          </div>
+        <div>
+           <textarea
+           className='w-full border-2 border-dashed border-gray-300 rounded-md'
+           >
+            Campaign descriptions
+
+           </textarea>
+       
+          </div>
          
           
 

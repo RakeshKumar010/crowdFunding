@@ -19,36 +19,49 @@ import Contact from "../main/contact/Contact";
 import Kyc from "../user/Kyc";
 import Admin from "../admin/Admin";
 import AdDashbord from "../admin/AdDashbord";
+import UserLayout from "./UserLayout";
+import NeederTotal from "../admin/needer/NeederTotal";
+import AdminLayout from "../admin/AdminLayout";
+import NeederRej from "../admin/needer/NeederRej";
+import NeederAppd from "../admin/needer/NeederAppd";
+import DrTotal from "../admin/donor/DrTotal";
 
 const Layout = () => {
-  
   return (
-    <>
+ 
       <>
-    
-        <NavBar />
+
         <Routes>
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/addashboard" element={<AdDashbord />} />
-          <Route path="/" element={<HomePage />} />
-          <Route path="/brosfundraiser" element={<BrosFund />} />
-          <Route path="/howitw" element={<Howitw />} />
-          <Route path="/stories" element={<Story />} />
-          <Route path="/sigupfund" element={<SignUpFund />} />
-          <Route path="/predetails" element={<PreDetails />} />
-          <Route path="/needer" element={<NePreDetails />} />
-          <Route path="/nestory" element={<NeStory />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<LoginUser />} />
-          <Route path="/congratulations" element={<Congratulations />} />
-          <Route path="/userProfile" element={<UserProfile />} />
-          <Route path="/accsetting" element={<AccSetting />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/kyc" element={<Kyc />} />
+          <Route path="/adminLogin" element={<Admin />} />
+          <Route path="/admin" element={<AdminLayout />} >
+            <Route index element={<AdDashbord/>}/>
+            <Route path="need-total" element={<NeederTotal/>}/>
+            <Route path="need-rejd" element={<NeederRej/>}/>
+            <Route path="need-appd" element={<NeederAppd/>}/>
+
+            <Route path="donor-total" element={<DrTotal/>}/>
+          </Route>
+          {/* <Route path="/admin/nederTotal" element={<NeederTotal />} /> */}
+          <Route path="/" element={<UserLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/brosfundraiser" element={<BrosFund />} />
+            <Route path="/howitw" element={<Howitw />} />
+            <Route path="/stories" element={<Story />} />
+            <Route path="/sigupfund" element={<SignUpFund />} />
+            <Route path="/predetails" element={<PreDetails />} />
+            <Route path="/needer" element={<NePreDetails />} />
+            <Route path="/nestory" element={<NeStory />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/login" element={<LoginUser />} />
+            <Route path="/congratulations" element={<Congratulations />} />
+            <Route path="/userProfile" element={<UserProfile />} />
+            <Route path="/accsetting" element={<AccSetting />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/kyc" element={<Kyc />} />
+          </Route>
         </Routes>
       </>
-      <Footer />
-    </>
+
   );
 };
 
