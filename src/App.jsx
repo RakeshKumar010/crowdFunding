@@ -4,7 +4,7 @@ import Layout from "./components/global/Layout";
 const App = () => {
   return (
     <BrowserRouter>
-      <Layout />
+<Layout/>
     </BrowserRouter>
   );
 };

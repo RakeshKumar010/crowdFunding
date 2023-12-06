@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CiUser, CiMail, CiPenpot } from "react-icons/ci";
 import { IoSchoolOutline } from "react-icons/io5";
-
+import {  CiCalendarDate } from "react-icons/ci";
+import { LiaMapMarkerAltSolid } from "react-icons/lia";
 const PreDetails = () => {
   return (
     <div className="flex justify-center bg-gray-800/80">
@@ -14,6 +15,33 @@ const PreDetails = () => {
           Tell us more about your Fundraiser
         </h2>
         <form className="p-3.5">
+        <div className="flex justify-between  border-b-2 w-full mb-3 items-center pr-2 ">
+            <input
+              type="text"
+              placeholder="Needer's full name *"
+              required
+              className="border-0  w-11/12 rounded-md"
+            />
+            <CiUser />
+          </div>
+          <div className="flex justify-between  border-b-2 w-full mb-3 items-center pr-2 ">
+            <input
+              type="text"
+              placeholder="Needer's age *"
+              required
+              className="border-0  w-11/12 rounded-md"
+            />
+            <CiCalendarDate />
+          </div>
+          <div className="flex justify-between  border-b-2 w-full mb-3 items-center pr-2 ">
+            <input
+              type="text"
+              placeholder="Address *"
+              required
+              className="border-0  w-11/12 rounded-md"
+            />
+            <LiaMapMarkerAltSolid />
+          </div>
           <div className="flex justify-between  border-b-2 w-full mb-3 items-center pr-2 ">
             <input
               type="text"
@@ -74,38 +102,7 @@ const PreDetails = () => {
             <CiPenpot className="text-gray-600" />
           </div>
 
-          <div class="flex items-center justify-center w-full">
-            <label
-              for="dropzone-file"
-              class="flex flex-col items-center justify-center w-full h-52 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
-            >
-              <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                <svg
-                  class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 16"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-                  />
-                </svg>
-                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                  <span class="font-semibold">Click to upload</span> or drag and
-                  drop
-                </p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">
-                  SVG, PNG, JPG or GIF (MAX. 800x400px)
-                </p>
-              </div>
-              <input id="dropzone-file" type="file" class="hidden" />
-            </label>
-          </div>
+          
 
           <div className="absolute right-0 bottom-0  w-full">
             <p

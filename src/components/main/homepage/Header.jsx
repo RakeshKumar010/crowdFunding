@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import homeBannerImg from '../../../assets/home banner.webp'
 const Header = () => {
   const phoneNumber = "+91746463546";
 
@@ -35,7 +35,7 @@ const Header = () => {
       </div>
       <div className="lg:w-1/2 w-full">
         <img
-          src="https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1536&dpr=1.0"
+          src={homeBannerImg}
           alt="bannder"
           className="w-full h-fit"
         />
